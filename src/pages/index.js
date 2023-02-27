@@ -33,7 +33,8 @@ export default function Home() {
                 Download Resume
               </a>
             </div>
-
+            <br />
+            <br />
             <h3 className="text-description">About me</h3>
             <p className="text-description">
               Soy un apasionado desarrollador web con experiencia en tecnologías
@@ -50,7 +51,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-       
       </div>
     </>
   );
