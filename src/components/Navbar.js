@@ -8,83 +8,47 @@ const colors = {
   accent2: "#d600ff",
 };
 
-
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary font">
       <div className="container">
         <div className="col-md-8">
-          <div className="navbar-brand" style={{ fontFamily: "Orbitron", color: colors.primary }}>
-            Leandro Licata
-          </div>
+          <div className="navbar-brand text-success">Leandro Licata</div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-        <div className="collapse navbar-collapse">
+        <div className="collapse navbar-collapse" id="navbarColor01">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
               <Link href="/">
-                <div
-                  className="nav-link"
-                  style={{
-                    fontFamily: "Orbitron",
-                    boxShadow: `0 0 5px ${colors.secondary}`, color: colors.secondary
-                  }}
-                >
+                <div className="nav-link">
                   <i className="fas fa-home mr-2"></i>
                   Home
                 </div>
               </Link>
             </li>
-            <li className="nav-item">
-              <Link href="/education">
-                <div
-                  className="nav-link"
-                  style={{
-                    fontFamily: "Orbitron",
-                    boxShadow: `0 0 5px ${colors.secondary}`, color: colors.secondary
-                  }}
-                >
-                  <i className="fas fa-graduation-cap mr-2"></i>
-                  Education
-                </div>
-              </Link>
-            </li>
+
             <li className="nav-item">
               <Link href="/projects">
-                <div
-                  className="nav-link"
-                  style={{
-                    fontFamily: "Orbitron",
-                    boxShadow: `0 0 5px ${colors.secondary}`, color: colors.secondary
-                  }}
-                >
+                <div className="nav-link">
                   <i className="fas fa-code mr-2"></i>
                   Projects
                 </div>
               </Link>
             </li>
-            <li className="nav-item">
-              <Link href="/skills">
-                <div
-                  className="nav-link"
-                  style={{
-                    fontFamily: "Orbitron",
-                    boxShadow: `0 0 5px ${colors.secondary}`, color: colors.secondary
-                  }}
-                >
-                  <i className="fas fa-cogs mr-2"></i>
-                  Skills
-                </div>
-              </Link>
-            </li>
+
             <li className="nav-item">
               <Link href="/contact">
-                <div
-                  className="nav-link"
-                  style={{
-                    fontFamily: "Orbitron",
-                    boxShadow: `0 0 5px ${colors.secondary}`, color: colors.secondary
-                  }}
-                >
+                <div className="nav-link">
                   <i className="fas fa-envelope mr-2"></i>
                   Contact
                 </div>
