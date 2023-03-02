@@ -15,7 +15,7 @@ export default function Navbar() {
         <div className="col-md-8">
           <div className="navbar-brand text-success">Leandro Licata</div>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarColor01"
@@ -23,35 +23,30 @@ export default function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
         </div>
         <div className="collapse navbar-collapse" id="navbarColor01">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
               <Link href="/">
-                <div className="nav-link">
-                  <i className="fas fa-home mr-2"></i>
-                  Home
-                </div>
+                <div className="nav-link">Home</div>
               </Link>
             </li>
-
+            <li className="nav-item">
+              <Link href="/skills">
+                <div className="nav-link">Skills</div>
+              </Link>
+            </li>
             <li className="nav-item">
               <Link href="/projects">
-                <div className="nav-link">
-                  <i className="fas fa-code mr-2"></i>
-                  Projects
-                </div>
+                <div className="nav-link">Projects</div>
               </Link>
             </li>
 
             <li className="nav-item">
               <Link href="/contact">
-                <div className="nav-link">
-                  <i className="fas fa-envelope mr-2"></i>
-                  Contact
-                </div>
+                <div className="nav-link">Contact</div>
               </Link>
             </li>
           </ul>
