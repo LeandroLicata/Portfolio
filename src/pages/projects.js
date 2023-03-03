@@ -1,7 +1,9 @@
-import Image from "next/image";
+import CardContainer from "@/components/CardContainer";
 
 export default function Projects() {
   return (
-   <></>
+    <>
+      <CardContainer />
+    </>
   );
 }
