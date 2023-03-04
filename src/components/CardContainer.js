@@ -7,6 +7,7 @@ export default function CardContainer() {
       {projects.map((project) => {
         return (
           <Card
+            key={project.name}
             name={project.name}
             image={project.image}
             description={project.description}
