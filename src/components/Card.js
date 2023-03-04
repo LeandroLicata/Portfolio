@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function Card({ name, image, description, url }) {
   return (
-    <div className="card border-primary m-3">
+    <div className="card border-info m-3">
       <div className="card-body row">
         <Image src={image} alt="project" width={300} height={200} className="col-4"/>
-        <div className="col-8">
-          <h4 className="card-title">{name}</h4>
+        <div className="col-8 font">
+          <h4 className="card-title text-secondary">{name}</h4>
           <p className="card-text">{description}</p>
           <p className="card-text">
             Demo <Link href={url[0]}>{url[0]}</Link>

@@ -1,17 +1,9 @@
 import Link from "next/link";
 
-const colors = {
-  primary: "#00ff9f",
-  secondary: "#00b8ff",
-  dark: "#001eff",
-  accent: "#bd00ff",
-  accent2: "#d600ff",
-};
-
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary font">
-      <div className="container">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div className="container font">
         <div className="col-md-8">
           <div className="navbar-brand text-success">Leandro Licata</div>
           <button
@@ -27,26 +19,27 @@ export default function Navbar() {
           </button>
         </div>
         <div className="collapse navbar-collapse" id="navbarColor01">
-          <ul className="navbar-nav mr-auto">
+          <ul className="navbar-nav me-auto">
             <li className="nav-item">
-              <Link href="/">
-                <div className="nav-link">Home</div>
+              <Link className="nav-link" href="/">
+                Home
+                <span className="visually-hidden">(current)</span>
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/skills">
-                <div className="nav-link">Skills</div>
+              <Link className="nav-link" href="/skills">
+                Skills
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/projects">
-                <div className="nav-link">Projects</div>
+              <Link className="nav-link" href="/projects">
+                Projects
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link href="/contact">
-                <div className="nav-link">Contact</div>
+              <Link className="nav-link" href="/contact">
+                Contact
               </Link>
             </li>
           </ul>
