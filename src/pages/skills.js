@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
+
 
 export default function skills() {
   return (
@@ -13,7 +17,6 @@ export default function skills() {
               icon={brands("html5")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             HTML5
           </p>
@@ -22,7 +25,6 @@ export default function skills() {
               icon={brands("css3-alt")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             CSS3
           </p>
@@ -31,7 +33,6 @@ export default function skills() {
               icon={brands("square-js")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             JavaScript
           </p>
@@ -40,7 +41,6 @@ export default function skills() {
               icon={brands("react")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             React
           </p>
@@ -49,7 +49,6 @@ export default function skills() {
               icon={solid("retweet")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             Redux
           </p>
@@ -58,7 +57,6 @@ export default function skills() {
               icon={brands("node-js")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             Next
           </p>
@@ -67,7 +65,6 @@ export default function skills() {
               icon={brands("bootstrap")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             Bootstrap
           </p>
@@ -79,7 +76,6 @@ export default function skills() {
               icon={brands("node-js")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             Node.js
           </p>
@@ -88,7 +84,6 @@ export default function skills() {
               icon={solid("server")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             Express
           </p>
@@ -97,7 +92,6 @@ export default function skills() {
               icon={solid("database")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             MongoDB
           </p>
@@ -106,7 +100,6 @@ export default function skills() {
               icon={solid("database")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             PostgreSQL
           </p>
@@ -115,7 +108,6 @@ export default function skills() {
               icon={solid("link")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             Mongoose
           </p>
@@ -124,7 +116,6 @@ export default function skills() {
               icon={brands("js-square")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             Sequelize
           </p>
@@ -133,7 +124,6 @@ export default function skills() {
               icon={solid("cloud-arrow-up")}
               className="text-danger mx-2"
               size="lg"
-              fixedWidth
             />
             Cloudinary
           </p>
