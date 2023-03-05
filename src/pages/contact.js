@@ -24,6 +24,7 @@ export default function Form() {
           action="/success"
           name="contact"
           method="POST"
+          data-netlify-recaptcha="true"
           data-netlify="true"
           class="card border-ligh mb-3 shadow rounded"
           style={{ maxWidth: 800, maxHeight: 1600 }}
@@ -101,6 +102,7 @@ export default function Form() {
               )}
             </div>
           </div>
+          <div data-netlify-recaptcha="true"></div>
           {nombre.length >= 2 &&
             email &&
             asunto.length > 2 &&
