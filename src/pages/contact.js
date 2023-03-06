@@ -1,4 +1,10 @@
 import React, { useState } from "react";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 export default function Form() {
   const [nombre, setNombre] = useState("");
@@ -18,28 +24,29 @@ export default function Form() {
     }
   }
   return (
-    <div className="form-group row mt-4">
+    <div className="form-group row m-4">
       <div className="col-lg-4 offset-lg-4 font">
         <form
           action="/success"
           name="contact"
           method="POST"
-          data-netlify-recaptcha="true"
           data-netlify="true"
           className="card border-info mb-3"
           style={{ maxWidth: 800, maxHeight: 1600 }}
         >
           <input type="hidden" name="form-name" value="contact" />
-          <h4 className="card-header text-center text-secondary">Formulario de Contacto</h4>
+          <h4 className="card-header text-center text-secondary">
+            Contacto
+          </h4>
           <div className="card-body">
             <div>
-              <label className="mt-2">Nombre</label>
+              <label className="mt-2">Nombre:</label>
               <input
                 onChange={(e) => setNombre(e.target.value)}
                 type="text"
                 name="nombre"
-                className="form-control mt-2 rounded"
-                placeholder="Ingrese nombre"
+                className="form-control mt-2"
+                placeholder="Ingrese nombre..."
               />
               {nombre.length <= 0 ? (
                 <h6 className="text-danger text-center mt-2">
@@ -51,13 +58,13 @@ export default function Form() {
             </div>
 
             <div>
-              <label className="mt-2">Email</label>
+              <label className="mt-2">Email:</label>
               <input
                 onChange={validarEmail}
                 type="email"
                 name="email"
-                className="form-control mt-2 rounded"
-                placeholder="Ingrese email"
+                className="form-control mt-2"
+                placeholder="Ingrese email..."
               />
               {!email ? (
                 <h6 className="text-danger text-center mt-2">
@@ -68,13 +75,31 @@ export default function Form() {
               )}
             </div>
             <div>
+              <label className="mt-2">Asunto:</label>
+              <input
+                onChange={(e) => setAsunto(e.target.value)}
+                type="text"
+                name="asunto"
+                className="form-control mt-2"
+                placeholder="Ingrese asunto..."
+              />
+              {asunto.length <= 2 ? (
+                <h6 className="text-danger text-center mt-2">
+                  Ingrese el asunto.
+                </h6>
+              ) : (
+                ""
+              )}
+            </div>
+            <div>
               <label className="mt-2">Mensage: </label>
               <textarea
                 name="message"
                 onChange={(e) => setMensage(e.target.value)}
-                className="form-control mt-2 rounded"
+                className="form-control mt-2"
                 rows="3"
                 id="mensage"
+                placeholder="Mensaje..."
               ></textarea>
               {mensage.length <= 5 ? (
                 <h6 className="text-danger text-center mt-2">
@@ -85,27 +110,48 @@ export default function Form() {
               )}
             </div>
           </div>
-          <div data-netlify-recaptcha="true"></div>
-          <div
-            className="g-recaptcha text-center"
-            data-sitekey="6LfQbNkkAAAAAFhKQ8ieBZ3sVNtCGTFXXp25Uss7"
-          ></div>
 
-          {nombre.length >= 2 &&
-            email &&
-            asunto.length > 2 &&
-            mensage.length > 5 && (
-              <div className="container text-center mb-2">
-                <button
-                  type="submit"
-                  className="btn btn-primary btn-sm shadow rounded"
-                >
-                  Send <i className="bi bi-send"></i>
-                </button>
-              </div>
-            )}
+          {nombre.length >= 2 && email && mensage.length > 5 && (
+            <div className="container text-center mb-2">
+              <button type="submit" className="btn btn-outline-light">
+                Send <i className="bi bi-send"></i>
+              </button>
+            </div>
+          )}
         </form>
       </div>
+      <div className="text-center row mt-4 font">
+  <h6 className="col-12 col-md-4">
+    <Link href="https://www.linkedin.com/in/leandro-nicol%C3%A1s-licata-522898265/">
+      <FontAwesomeIcon
+        icon={brands("linkedin")}
+        className="text-primary mx-2"
+        size="lg"
+      />
+      LinkedIn
+    </Link>
+  </h6>
+
+  <h6 className="col-12 col-md-4">
+    <Link href="https://github.com/LeandroLicata">
+      <FontAwesomeIcon
+        icon={brands("github")}
+        className="text-primary mx-2"
+        size="lg"
+      />
+      GitHub
+    </Link>
+  </h6>
+  <h6 className="col-12 col-md-4">
+    <FontAwesomeIcon
+      icon={solid("envelope")}
+      className="text-primary mx-2"
+      size="lg"
+    />
+    leandrolicata1@gmail.com
+  </h6>
+</div>
+
     </div>
   );
 }

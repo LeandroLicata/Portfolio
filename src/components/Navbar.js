@@ -22,24 +22,24 @@ export default function Navbar() {
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
               <Link className="nav-link" href="/">
-                Home
+                Inicio
                 <span className="visually-hidden">(current)</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" href="/skills">
-                Skills
+                Habilidades
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" href="/projects">
-                Projects
+                Proyectos
               </Link>
             </li>
 
             <li className="nav-item">
               <Link className="nav-link" href="/contact">
-                Contact
+                Contacto
               </Link>
             </li>
           </ul>
