@@ -18,19 +18,19 @@ export default function Form() {
     }
   }
   return (
-    <div className="row mt-1">
-      <div className="col-lg-4 offset-lg-4">
+    <div className="form-group row mt-4">
+      <div className="col-lg-4 offset-lg-4 font">
         <form
           action="/success"
           name="contact"
           method="POST"
           data-netlify-recaptcha="true"
           data-netlify="true"
-          className="card border-ligh mb-3 shadow rounded"
+          className="card border-info mb-3"
           style={{ maxWidth: 800, maxHeight: 1600 }}
         >
           <input type="hidden" name="form-name" value="contact" />
-          <div className="card-header text-center">Formulario de Contacto</div>
+          <h4 className="card-header text-center text-secondary">Formulario de Contacto</h4>
           <div className="card-body">
             <div>
               <label className="mt-2">Nombre</label>
@@ -87,7 +87,7 @@ export default function Form() {
           </div>
           <div data-netlify-recaptcha="true"></div>
           <div
-            className="g-recaptcha"
+            className="g-recaptcha text-center"
             data-sitekey="6LfQbNkkAAAAAFhKQ8ieBZ3sVNtCGTFXXp25Uss7"
           ></div>
 
