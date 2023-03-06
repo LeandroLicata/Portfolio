@@ -26,12 +26,12 @@ export default function Form() {
           method="POST"
           data-netlify-recaptcha="true"
           data-netlify="true"
-          class="card border-ligh mb-3 shadow rounded"
+          className="card border-ligh mb-3 shadow rounded"
           style={{ maxWidth: 800, maxHeight: 1600 }}
         >
           <input type="hidden" name="form-name" value="contact" />
-          <div class="card-header text-center">Formulario de Contacto</div>
-          <div class="card-body">
+          <div className="card-header text-center">Formulario de Contacto</div>
+          <div className="card-body">
             <div>
               <label className="mt-2">Nombre</label>
               <input
@@ -68,28 +68,11 @@ export default function Form() {
               )}
             </div>
             <div>
-              <label className="mt-2">Asunto</label>
-              <input
-                onChange={(e) => setAsunto(e.target.value)}
-                type="text"
-                name="asunto"
-                className="form-control mt-2 rounded"
-                placeholder="Ingrese asunto"
-              />
-              {asunto.length <= 2 ? (
-                <h6 className="text-danger text-center mt-2">
-                  Ingrese el asunto.
-                </h6>
-              ) : (
-                ""
-              )}
-            </div>
-            <div>
               <label className="mt-2">Mensage: </label>
               <textarea
                 name="message"
                 onChange={(e) => setMensage(e.target.value)}
-                class="form-control mt-2 rounded"
+                className="form-control mt-2 rounded"
                 rows="3"
                 id="mensage"
               ></textarea>
@@ -103,6 +86,11 @@ export default function Form() {
             </div>
           </div>
           <div data-netlify-recaptcha="true"></div>
+          <div
+            className="g-recaptcha"
+            data-sitekey="6LfQbNkkAAAAAFhKQ8ieBZ3sVNtCGTFXXp25Uss7"
+          ></div>
+
           {nombre.length >= 2 &&
             email &&
             asunto.length > 2 &&
@@ -110,9 +98,9 @@ export default function Form() {
               <div className="container text-center mb-2">
                 <button
                   type="submit"
-                  class="btn btn-primary btn-sm shadow rounded"
+                  className="btn btn-primary btn-sm shadow rounded"
                 >
-                  Send <i class="bi bi-send"></i>
+                  Send <i className="bi bi-send"></i>
                 </button>
               </div>
             )}
