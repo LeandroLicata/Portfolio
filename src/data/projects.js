@@ -6,7 +6,7 @@ const projects = [
     description:
       "The Dog Wiki es una aplicación web desarrollada como proyecto individual durante mi participación en Henry Bootcamp. Esta aplicación consume datos de una API para mostrar información sobre diferentes razas de perros, permitiendo al usuario agregar su propia raza de perro si no se encuentra en la lista. En la realización del proyecto, utilicé tecnologías como Node.js, PostgreSQL, Sequelize y Express para el Back-End, y React, Redux, HTML y CSS para el Front-End.",
     url: [
-      "https://pi-dogs-front-production-96ce.up.railway.app/",
+      "https://thedogwiki.vercel.app/",
       "https://github.com/LeandroLicata/PI-Dogs-front",
       "https://github.com/LeandroLicata/PI-Dogs-back",
     ],
