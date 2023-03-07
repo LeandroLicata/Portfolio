@@ -17,7 +17,11 @@ export default function Home() {
           <h1 className="text-success">Leandro Nicolas Licata</h1>
           <h2 className="text-info mb-4">Full Stack Web Developer</h2>
           <div className="my-4">
-            <a href="#" className="btn btn-outline-light mb-5">
+            <a
+              href="/LeandroLicata-CV.pdf"
+              download
+              className="btn btn-outline-light mb-5"
+            >
               Descargar CV
             </a>
           </div>
