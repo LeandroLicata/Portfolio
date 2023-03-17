@@ -30,9 +30,11 @@ export default function Home() {
             soluciones innovadoras.
           </p>
           <p className="mb-3">
-            Siempre estoy buscando nuevos desafíos y colaboraciones con equipos
-            creativos e innovadores para seguir mejorando mis habilidades en el
-            desarrollo de aplicaciones web.
+            Constantemente busco expandir mi conjunto de habilidades en el
+            desarrollo de aplicaciones web a través de colaboraciones con
+            equipos innovadores y creativos que ofrezcan nuevos desafíos. Estoy
+            siempre dispuesto a aprender y mejorar, y estoy seguro de que puedo
+            hacer una valiosa contribución a cualquier proyecto que emprenda.
           </p>
           <i className="fab fa-react fa-3x"></i>
         </div>
