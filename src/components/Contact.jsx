@@ -112,7 +112,7 @@ export default function Form() {
 
             {nombre.length >= 2 && email && mensage.length > 5 && (
               <div className="container text-center mb-2">
-                <button type="submit" className="btn btn-outline-dark">
+                <button type="submit" className="btn btn-outline-light">
                   Send <i className="bi bi-send"></i>
                 </button>
               </div>
