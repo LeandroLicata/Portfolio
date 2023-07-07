@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap");
 
 body {
+  font-family: "Orbitron", sans-serif;
   min-height: 100vh;
 }
 
@@ -9,7 +10,7 @@ body {
 }
 
 .text-name {
-  /* font-family: "Orbitron", sans-serif; */
+  font-family: "Orbitron", sans-serif;
   /* font-size: 5em; */
   text-align: center;
   text-shadow: 0 0 5px #00ff9f, 0 0 10px #00ff9f, 0 0 15px #00ff9f,
@@ -19,7 +20,7 @@ body {
 }
 
 .download-button {
-  /* font-family: "Orbitron", sans-serif; */
+  font-family: "Orbitron", sans-serif;
   font-size: 1.2em;
   padding: 10px 20px;
   border: none;
@@ -43,7 +44,7 @@ body {
 }
 
 .text-description {
-  /* font-family: "Orbitron", sans-serif; */
+  font-family: "Orbitron", sans-serif;
   color: #d600ff;
   text-shadow: 0 0 10px #d600ff, 0 0 20px #d600ff, 0 0 30px #d600ff,
     0 0 40px #d600ff, 0 0 50px #d600ff, 0 0 60px #d600ff, 0 0 70px #d600ff;
@@ -61,9 +62,9 @@ body {
     0 0 70px #001eff, 0 0 80px #001eff, 0 0 100px #001eff, 0 0 150px #001eff;
 }
 
-/* .font {
+.font {
   font-family: "Orbitron", sans-serif;
-} */
+}
 
 .no-decoration {
   text-decoration: none;

@@ -9,7 +9,7 @@ export default function Home() {
             <a
               href="/LeandroLicata-CV.pdf"
               download
-              className="btn btn-outline-dark mb-5"
+              className="btn btn-outline-light mb-5"
             >
               Descargar CV
             </a>
